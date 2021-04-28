@@ -12,9 +12,9 @@ zookeeper集群
 3.cp -r conf/zoo_sample.cfg  zoo.cfg \
 4.vim zoo.cfg \
 5.新增配置 \
-quorumListenOnAllIPs=true  
-server.1=9.140.12.51:2888:3888
-server.2=122.4.81.175:2888:3888
+quorumListenOnAllIPs=true       \
+server.1=9.140.12.51:2888:3888      \
+server.2=122.4.81.175:2888:3888     \
 server.3=106.14.137.230:2888:3888 \
 dataDir=/apache-zookeeper-3.5.8-bin/data \
 6.创建data文件夹  
@@ -35,9 +35,9 @@ sh zkServer.sh  start ../conf/zoo.cfg
 3.cp -r conf/zoo_sample.cfg  zoo.cfg    \
 4.vim zoo.cfg   \
 5.新增配置  \
-quorumListenOnAllIPs=true  
-server.1=9.140.12.51:2888:3888
-server.2=122.4.81.175:2888:3888
+quorumListenOnAllIPs=true       \
+server.1=9.140.12.51:2888:3888      \
+server.2=122.4.81.175:2888:3888     \
 server.3=106.14.137.230:2888:3888   \
 dataDir=/apache-zookeeper-3.5.8-bin/data    \
 6.创建data文件夹     \
@@ -58,10 +58,10 @@ sh zkServer.sh  start ../conf/zoo.cfg
 3.cp -r conf/zoo_sample.cfg  zoo.cfg    \
 4.vim zoo.cfg   \
 5.新增配置      \
-quorumListenOnAllIPs=true 
-server.1=9.140.12.51:2888:3888
-server.2=122.4.81.175:2888:3888
-server.3=106.14.137.230:2888:3888
+quorumListenOnAllIPs=true       \
+server.1=9.140.12.51:2888:3888      \
+server.2=122.4.81.175:2888:3888     \
+server.3=106.14.137.230:2888:3888       \
 dataDir=/apache-zookeeper-3.5.8-bin/data    \
 6.创建data文件夹     \
 cd /apache-zookeeper-3.5.8-bin      \
